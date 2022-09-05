@@ -1,0 +1,93 @@
+.wrapper-bg {
+  background: #0f1119;
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 1023px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.button-with-bg {
+  width: fit-content;
+  background: linear-gradient(270deg, #191D7D 0%, #3940E7 100%);
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #FFFFFF;
+
+  &:hover {
+    background: linear-gradient(-270deg, #191D7D 0%, #3940E7 100%);
+    color: #FFFFFF;
+  }
+}
+
+.button-with-border {
+  display: grid;
+  grid-template-columns: 25px auto;
+  border: 1px solid #FFFFFF;
+  padding: 13px 0;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+
+  &:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+  }
+
+  &:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+  }
+}
+
+.button-with-border:hover > svg {
+  fill: #000000;
+}
+
+.border-button {
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  border-radius: 500px;
+  padding: 12px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+
+  &:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+    fill: #ffffff;
+  }
+}
+
+.border-button:hover svg {
+  fill: #000000;
+}
